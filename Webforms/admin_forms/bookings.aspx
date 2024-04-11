@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Admin</title>
-    <link href="../Stylesheet/Admin_style.css" rel="stylesheet" />
+    <link href="../../Stylesheet/Admin_style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
@@ -14,7 +14,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand" href="#">
-            <img src="../Images/Group12.png" alt="Logo" height="80" />
+            <img src="../../Images/Group12.png" alt="Logo" height="80" />
         </a>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
