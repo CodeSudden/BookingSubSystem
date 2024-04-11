@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
         <uc:Navbar runat="server" />
         <uc:Sidebar runat="server" />
-        <div>
+        <div class="container bg-light">
             
         </div>
     </form>
