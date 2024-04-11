@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="refunds.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.refunds" %>
 <%@ Register Src="Navbar.ascx" TagName="Navbar" TagPrefix="uc" %>
+<%@ Register Src="sidebar.ascx" TagName="Sidebar" TagPrefix="uc" %>
+
 
 <!DOCTYPE html>
 
@@ -10,6 +12,7 @@
 <body>
     <form id="form1" runat="server">
         <uc:Navbar runat="server" />
+        <uc:Sidebar runat="server" />
         <div>
             
         </div>

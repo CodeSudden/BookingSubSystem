@@ -89,6 +89,7 @@
     <Content Include="Webforms\admin_forms\bookings.aspx" />
     <Content Include="Webforms\admin_forms\refunds.aspx" />
     <Content Include="Webforms\admin_forms\Navbar.ascx" />
+    <Content Include="Webforms\admin_forms\sidebar.ascx" />
     <Content Include="Webforms\Forgot_Password.aspx" />
     <Content Include="Webforms\Homepage.aspx" />
     <Content Include="Webforms\Login.aspx" />
@@ -117,6 +118,13 @@
     </Compile>
     <Compile Include="Webforms\admin_forms\Navbar.ascx.designer.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webforms\admin_forms\sidebar.ascx.cs">
+      <DependentUpon>sidebar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\admin_forms\sidebar.ascx.designer.cs">
+      <DependentUpon>sidebar.ascx</DependentUpon>
     </Compile>
     <Compile Include="Webforms\Forgot_Password.aspx.cs">
       <DependentUpon>Forgot_Password.aspx</DependentUpon>

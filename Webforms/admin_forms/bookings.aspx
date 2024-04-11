@@ -1,4 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="bookings.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.bookings" %>
+<%@ Register Src="Navbar.ascx" TagName="Navbar" TagPrefix="uc" %>
+<%@ Register Src="sidebar.ascx" TagName="Sidebar" TagPrefix="uc" %>
+
 
 <!DOCTYPE html>
 
@@ -12,54 +15,8 @@
 <body class="body">
     <form id="form1" runat="server">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="#">
-            <img src="../../Images/Group12.png" alt="Logo" height="80" />
-        </a>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link text-dark mr-5" href="admn_refunds.aspx"><i class="fa-regular fa-bell fa-2xl"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark mr-5" href="#"><i class="fa-regular fa-user fa-2xl"></i></a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="sidebar">
-        <div class="center-sidebar">
-        <a href="#">
-            <div class="icon-container">
-                <i class="fa-solid fa-book-open fa-2x"></i>
-                <span class="sidebar-text">BOOKINGS</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="icon-container">
-                <i class="fa-solid fa-rotate fa-2x"></i>
-                <span class="sidebar-text">REFUNDS</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="icon-container">
-                <i class="fa-regular fa-circle-xmark fa-2x"></i>
-                <span class="sidebar-text">CANCELLATION</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="icon-container">
-                <i class="fa-regular fa-pen-to-square fa-2x"></i>
-                <span class="sidebar-text">EDIT SERVICES</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="icon-container">
-                <i class="fa-solid fa-list fa-2x"></i>
-                <span class="sidebar-text">ACTIVITY LOG</span>
-            </div>
-        </a>
-        </div>        
-    </div>
+        <uc:Navbar runat="server" />
+        <uc:Sidebar runat="server" />
 
     <div class="container-fluid">
 
