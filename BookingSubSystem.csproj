@@ -86,7 +86,11 @@
     <Content Include="Stylesheet\Main.css" />
     <Content Include="Stylesheet\Registration_Style.css" />
     <Content Include="Web.config" />
+    <Content Include="Webforms\admin_forms\activity_log.aspx" />
     <Content Include="Webforms\admin_forms\bookings.aspx" />
+    <Content Include="Webforms\admin_forms\cancellation.aspx" />
+    <Content Include="Webforms\admin_forms\edit_services.aspx" />
+    <Content Include="Webforms\admin_forms\mng_admns.aspx" />
     <Content Include="Webforms\admin_forms\refunds.aspx" />
     <Content Include="Webforms\admin_forms\Navbar.ascx" />
     <Content Include="Webforms\admin_forms\sidebar.ascx" />
@@ -98,12 +102,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Webforms\admin_forms\activity_log.aspx.cs">
+      <DependentUpon>activity_log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\admin_forms\activity_log.aspx.designer.cs">
+      <DependentUpon>activity_log.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Webforms\admin_forms\bookings.aspx.cs">
       <DependentUpon>bookings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Webforms\admin_forms\bookings.aspx.designer.cs">
       <DependentUpon>bookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webforms\admin_forms\cancellation.aspx.cs">
+      <DependentUpon>cancellation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\admin_forms\cancellation.aspx.designer.cs">
+      <DependentUpon>cancellation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webforms\admin_forms\edit_services.aspx.cs">
+      <DependentUpon>edit_services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\admin_forms\edit_services.aspx.designer.cs">
+      <DependentUpon>edit_services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Webforms\admin_forms\mng_admns.aspx.cs">
+      <DependentUpon>mng_admns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\admin_forms\mng_admns.aspx.designer.cs">
+      <DependentUpon>mng_admns.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webforms\admin_forms\refunds.aspx.cs">
       <DependentUpon>refunds.aspx</DependentUpon>

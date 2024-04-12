@@ -1,18 +1,20 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="refunds.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.refunds" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mng_admns.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.mng_admns" %>
 <%@ Register Src="Navbar.ascx" TagName="Navbar" TagPrefix="uc" %>
 <%@ Register Src="sidebar.ascx" TagName="Sidebar" TagPrefix="uc" %>
-
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Admin-refunds</title>
+    <title>Admin-ManageAdmins</title>
+    <link href="../../Stylesheet/Admin_style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
 </head>
 <body class="body">
     <form id="form1" runat="server">
 
-    <uc:Navbar runat="server" />
+        <uc:Navbar runat="server" />
+        
 
     <div class="d-flex">
 
@@ -33,7 +35,7 @@
             <table class="table m-auto bg-white">
               <thead>
                 <tr>
-                  <th scope="col">SERVICE ID</th>
+                  <th scope="col">SERVICE</th>
                   <th scope="col">NAME</th>
                   <th scope="col">ADDRESS</th>
                   <th scope="col">TITLE</th>

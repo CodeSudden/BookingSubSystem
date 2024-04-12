@@ -7,44 +7,55 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Admin</title>
+    <title>Admin-Bookings</title>
     <link href="../../Stylesheet/Admin_style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body class="body">
     <form id="form1" runat="server">
 
         <uc:Navbar runat="server" />
-        <uc:Sidebar runat="server" />
-
-    <div class="container-fluid">
-
-        <div class="container-fluid p-5">
-            <input class="float-right border-0 bg-white" type="search" name="search" placeholder="Enter text here..."/>
-        </div>
         
-        <div>
-        <table class="table w-75 m-auto bg-white">
-          <thead>
-            <tr>
-              <th scope="col">SERVICE ID</th>
-              <th scope="col">NAME</th>
-              <th scope="col">ADDRESS</th>
-              <th scope="col">TITLE</th>
-              <th scope="col">TITLE</th>
-              <th scope="col">TITLE</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-          </tbody>
-        </table>
+
+    <div class="d-flex">
+
+    <uc:Sidebar runat="server" />
+
+        <div class="flex-grow-1">
+    
+            <div class="container col-lg-10 mr-5">
+
+            <div class="row justify-content-end m-5">
+                <div class="col-auto">
+                    <div class="form-inline">
+                        <input class="form-control mr-sm-2 ml-auto" type="search" placeholder="Search" aria-label="Search"/>
+                    </div>
+                </div>
+            </div>
+        
+            <table class="table bg-white">
+              <thead>
+                <tr>
+                  <th scope="col">SERVICE ID</th>
+                  <th scope="col">NAME</th>
+                  <th scope="col">ADDRESS</th>
+                  <th scope="col">SERVICE</th>
+                  <th scope="col">DATE</th>
+                  <th scope="col">AMOUNT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark Arguelles</td>
+                  <td>Quezon City</td>
+                  <td>Cleaning</td>
+                  <td>08-04-2002</td>
+                  <td>800php</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
         </div>
     </div>
 

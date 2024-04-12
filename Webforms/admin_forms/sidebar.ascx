@@ -12,36 +12,43 @@
 <body>
     <div class="sidebar">
         <div class="center-sidebar">
-        <a href="#">
+
+        <asp:HyperLink ID="bookingsLink" runat="server" NavigateUrl="bookings.aspx" Text="Bookings">
             <div class="icon-container">
                 <i class="fa-solid fa-book-open fa-2x"></i>
                 <span class="sidebar-text">BOOKINGS</span>
             </div>
-        </a>
-        <a href="#">
+        </asp:HyperLink>
+        <asp:HyperLink ID="refundsLink" runat="server" NavigateUrl="refunds.aspx" Text="refunds">
             <div class="icon-container">
                 <i class="fa-solid fa-rotate fa-2x"></i>
                 <span class="sidebar-text">REFUNDS</span>
             </div>
-        </a>
-        <a href="#">
+        </asp:HyperLink>
+        <asp:HyperLink ID="cancellationLink" runat="server" NavigateUrl="cancellation.aspx" Text="cancellation">
             <div class="icon-container">
                 <i class="fa-regular fa-circle-xmark fa-2x"></i>
                 <span class="sidebar-text">CANCELLATION</span>
             </div>
-        </a>
-        <a href="#">
+        </asp:HyperLink>
+        <asp:HyperLink ID="editservicesLink" runat="server" NavigateUrl="edit_services.aspx" Text="editservice">
             <div class="icon-container">
                 <i class="fa-regular fa-pen-to-square fa-2x"></i>
                 <span class="sidebar-text">EDIT SERVICES</span>
             </div>
-        </a>
-        <a href="#">
+        </asp:HyperLink>
+        <asp:HyperLink ID="activitylogLink" runat="server" NavigateUrl="activity_log.aspx" Text="activitylog">
             <div class="icon-container">
                 <i class="fa-solid fa-list fa-2x"></i>
                 <span class="sidebar-text">ACTIVITY LOG</span>
             </div>
-        </a>
+        </asp:HyperLink>
+        <asp:HyperLink ID="manageadminLink" runat="server" NavigateUrl="mng_admns.aspx" Text="manageadmins">
+            <div class="icon-container">
+                <i class="fa-solid fa-user-tie fa-2x"></i>
+                <span class="sidebar-text">MANAGE ADMINS</span>
+            </div>
+        </asp:HyperLink>
         </div>        
     </div>
 </body>
