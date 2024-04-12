@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href=" ">
+        <a class="navbar-brand" href="Bookings.aspx">
             <img src="../../Images/Group12.png" alt="Logo" height="80" />
         </a>
         <ul class="navbar-nav ml-auto">

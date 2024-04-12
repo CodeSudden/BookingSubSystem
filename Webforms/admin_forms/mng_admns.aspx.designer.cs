@@ -11,7 +11,7 @@ namespace BookingSubSystem.Webforms.admin_forms
 {
 
 
-    public partial class mng_admns
+    public partial class Mng_admns
     {
 
         /// <summary>

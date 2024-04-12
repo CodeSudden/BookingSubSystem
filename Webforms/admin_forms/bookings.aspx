@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="bookings.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.bookings" %>
+﻿<%@ Page Language="C#" Async="true" AutoEventWireup="true" CodeBehind="Bookings.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.Bookings" %>
 <%@ Register Src="Navbar.ascx" TagName="Navbar" TagPrefix="uc" %>
 <%@ Register Src="sidebar.ascx" TagName="Sidebar" TagPrefix="uc" %>
 
@@ -32,29 +32,12 @@
                     </div>
                 </div>
             </div>
-        
-            <table class="table bg-white">
-              <thead>
-                <tr>
-                  <th scope="col">SERVICE ID</th>
-                  <th scope="col">NAME</th>
-                  <th scope="col">ADDRESS</th>
-                  <th scope="col">SERVICE</th>
-                  <th scope="col">DATE</th>
-                  <th scope="col">AMOUNT</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark Arguelles</td>
-                  <td>Quezon City</td>
-                  <td>Cleaning</td>
-                  <td>08-04-2002</td>
-                  <td>800php</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="bg-light text-dark">
+                <asp:GridView ID="datatbl" runat="server" AutoGenerateColumns="true">
+
+                </asp:GridView>
+            </div>
+
             </div>
         </div>
     </div>

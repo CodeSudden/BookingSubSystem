@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="sidebar.ascx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.WebUserControl2" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Sidebar.ascx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.WebUserControl2" %>
 
 <!DOCTYPE html>
 
@@ -13,37 +13,37 @@
     <div class="sidebar">
         <div class="center-sidebar">
 
-        <asp:HyperLink ID="bookingsLink" runat="server" NavigateUrl="bookings.aspx" Text="Bookings">
+        <asp:HyperLink ID="bookingsLink" runat="server" NavigateUrl="Bookings.aspx" Text="Bookings">
             <div class="icon-container">
                 <i class="fa-solid fa-book-open fa-2x"></i>
                 <span class="sidebar-text">BOOKINGS</span>
             </div>
         </asp:HyperLink>
-        <asp:HyperLink ID="refundsLink" runat="server" NavigateUrl="refunds.aspx" Text="refunds">
+        <asp:HyperLink ID="refundsLink" runat="server" NavigateUrl="Refunds.aspx" Text="refunds">
             <div class="icon-container">
                 <i class="fa-solid fa-rotate fa-2x"></i>
                 <span class="sidebar-text">REFUNDS</span>
             </div>
         </asp:HyperLink>
-        <asp:HyperLink ID="cancellationLink" runat="server" NavigateUrl="cancellation.aspx" Text="cancellation">
+        <asp:HyperLink ID="cancellationLink" runat="server" NavigateUrl="Cancellation.aspx" Text="cancellation">
             <div class="icon-container">
                 <i class="fa-regular fa-circle-xmark fa-2x"></i>
                 <span class="sidebar-text">CANCELLATION</span>
             </div>
         </asp:HyperLink>
-        <asp:HyperLink ID="editservicesLink" runat="server" NavigateUrl="edit_services.aspx" Text="editservice">
+        <asp:HyperLink ID="editservicesLink" runat="server" NavigateUrl="Edit_services.aspx" Text="editservice">
             <div class="icon-container">
                 <i class="fa-regular fa-pen-to-square fa-2x"></i>
                 <span class="sidebar-text">EDIT SERVICES</span>
             </div>
         </asp:HyperLink>
-        <asp:HyperLink ID="activitylogLink" runat="server" NavigateUrl="activity_log.aspx" Text="activitylog">
+        <asp:HyperLink ID="activitylogLink" runat="server" NavigateUrl="Activity_log.aspx" Text="activitylog">
             <div class="icon-container">
                 <i class="fa-solid fa-list fa-2x"></i>
                 <span class="sidebar-text">ACTIVITY LOG</span>
             </div>
         </asp:HyperLink>
-        <asp:HyperLink ID="manageadminLink" runat="server" NavigateUrl="mng_admns.aspx" Text="manageadmins">
+        <asp:HyperLink ID="manageadminLink" runat="server" NavigateUrl="Mng_admns.aspx" Text="manageadmins">
             <div class="icon-container">
                 <i class="fa-solid fa-user-tie fa-2x"></i>
                 <span class="sidebar-text">MANAGE ADMINS</span>

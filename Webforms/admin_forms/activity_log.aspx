@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="activity_log.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.activity_log" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Activity_log.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.Activity_log" %>
 <%@ Register Src="Navbar.ascx" TagName="Navbar" TagPrefix="uc" %>
 <%@ Register Src="sidebar.ascx" TagName="Sidebar" TagPrefix="uc" %>
 

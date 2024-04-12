@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace BookingSubSystem.Webforms.admin_forms
 {
-    public partial class cancellation : System.Web.UI.Page
+    public partial class Cancellation : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

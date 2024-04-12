@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace BookingSubSystem.Webforms.admin_forms
 {
-    public partial class edit_services : System.Web.UI.Page
+    public partial class Edit_services : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

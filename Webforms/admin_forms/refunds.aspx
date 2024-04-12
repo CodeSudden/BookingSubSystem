@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="refunds.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.refunds" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Refunds.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.Refunds" %>
 <%@ Register Src="Navbar.ascx" TagName="Navbar" TagPrefix="uc" %>
 <%@ Register Src="sidebar.ascx" TagName="Sidebar" TagPrefix="uc" %>
 

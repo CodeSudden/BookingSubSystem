@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mng_admns.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.mng_admns" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Mng_admns.aspx.cs" Inherits="BookingSubSystem.Webforms.admin_forms.Mng_admns" %>
 <%@ Register Src="Navbar.ascx" TagName="Navbar" TagPrefix="uc" %>
 <%@ Register Src="sidebar.ascx" TagName="Sidebar" TagPrefix="uc" %>
 
