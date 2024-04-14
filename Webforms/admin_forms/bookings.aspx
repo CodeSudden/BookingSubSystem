@@ -32,11 +32,35 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-light text-dark">
-                <asp:GridView ID="datatbl" runat="server" AutoGenerateColumns="true">
 
-                </asp:GridView>
-            </div>
+            <table id="datatbl" class="table table-striped table-bordered bg-light">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Customer Name</th>
+                        <th>Customer Phone</th>
+                        <th>Booking Date</th>
+                        <th>Service Category</th>
+                        <th>Total Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <asp:Repeater ID="repeater" runat="server">
+                        <ItemTemplate>
+                            <tr>
+                                <td><%# Eval("booking_id") %></td>
+                                <td><%# Eval("customer_name") %></td>
+                                <td><%# Eval("customer_phone") %></td>
+                                <td><%# Eval("booking_date") %></td>
+                                <td><%# Eval("service.category") %></td>
+                                <td><%# Eval("total_price") %></td>
+                                <td><%# Eval("status") %></td>
+                            </tr>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </tbody>
+            </table>
 
             </div>
         </div>

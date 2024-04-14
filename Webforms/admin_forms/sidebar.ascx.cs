@@ -15,35 +15,30 @@ namespace BookingSubSystem.Webforms.admin_forms
             string currentPath = Request.Url.AbsolutePath;
 
             // Check if the current path matches any of the sidebar links
-            if (currentPath.EndsWith("bookings.aspx"))
+            if (currentPath.EndsWith("Bookings.aspx"))
             {
                 // Set the active state for the bookings link
                 bookingsLink.CssClass = "active";
             }
-            else if (currentPath.EndsWith("refunds.aspx"))
+            else if (currentPath.EndsWith("Refunds.aspx"))
             {
                 // Set the active state for the refunds link
                 refundsLink.CssClass = "active";
             }
-            else if (currentPath.EndsWith("cancellation.aspx"))
+            else if (currentPath.EndsWith("Cancellation.aspx"))
             {
                 // Set the active state for the refunds link
                 cancellationLink.CssClass = "active";
             }
-            else if (currentPath.EndsWith("editservices.aspx"))
+            else if (currentPath.EndsWith("Edit_services.aspx"))
             {
                 // Set the active state for the refunds link
                 editservicesLink.CssClass = "active";
             }
-            else if (currentPath.EndsWith("activity_log.aspx"))
+            else if (currentPath.EndsWith("Activity_log.aspx"))
             {
                 // Set the active state for the refunds link
                 activitylogLink.CssClass = "active";
-            }
-            else if (currentPath.EndsWith("mng_admns.aspx"))
-            {
-                // Set the active state for the refunds link
-                manageadminLink.CssClass = "active";
             }
             // Add similar conditions for other links
         }

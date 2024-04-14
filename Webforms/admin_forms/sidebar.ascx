@@ -43,12 +43,6 @@
                 <span class="sidebar-text">ACTIVITY LOG</span>
             </div>
         </asp:HyperLink>
-        <asp:HyperLink ID="manageadminLink" runat="server" NavigateUrl="Mng_admns.aspx" Text="manageadmins">
-            <div class="icon-container">
-                <i class="fa-solid fa-user-tie fa-2x"></i>
-                <span class="sidebar-text">MANAGE ADMINS</span>
-            </div>
-        </asp:HyperLink>
         </div>        
     </div>
 </body>

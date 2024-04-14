@@ -7,8 +7,9 @@
     <title></title>
     <link href="../../Stylesheet/Admin_style.css" rel="stylesheet" />
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand" href="Bookings.aspx">
             <img src="../../Images/Group12.png" alt="Logo" height="80" />
         </a>

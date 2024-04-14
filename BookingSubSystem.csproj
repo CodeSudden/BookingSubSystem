@@ -94,7 +94,6 @@
     <Content Include="Webforms\admin_forms\Bookings.aspx" />
     <Content Include="Webforms\admin_forms\Cancellation.aspx" />
     <Content Include="Webforms\admin_forms\Edit_services.aspx" />
-    <Content Include="Webforms\admin_forms\Mng_admns.aspx" />
     <Content Include="Webforms\admin_forms\Refunds.aspx" />
     <Content Include="Webforms\admin_forms\Navbar.ascx" />
     <Content Include="Webforms\admin_forms\Sidebar.ascx" />
@@ -105,7 +104,7 @@
     <Content Include="Webforms\Reviews.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="models\Class1.cs" />
+    <Compile Include="models\Booking_Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Webforms\admin_forms\Activity_log.aspx.cs">
       <DependentUpon>Activity_log.aspx</DependentUpon>
@@ -128,19 +127,13 @@
     <Compile Include="Webforms\admin_forms\Cancellation.aspx.designer.cs">
       <DependentUpon>Cancellation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Webforms\admin_forms\Class1.cs" />
     <Compile Include="Webforms\admin_forms\Edit_services.aspx.cs">
       <DependentUpon>Edit_services.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Webforms\admin_forms\Edit_services.aspx.designer.cs">
       <DependentUpon>Edit_services.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Webforms\admin_forms\Mng_admns.aspx.cs">
-      <DependentUpon>Mng_admns.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Webforms\admin_forms\Mng_admns.aspx.designer.cs">
-      <DependentUpon>Mng_admns.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webforms\admin_forms\Refunds.aspx.cs">
       <DependentUpon>Refunds.aspx</DependentUpon>

@@ -40,14 +40,14 @@ namespace BookingSubSystem.Webforms.admin_forms
 
                             // Read the response content as a string
                             string responseData = await response.Content.ReadAsStringAsync();
-                            System.Diagnostics.Debug.WriteLine(responseData);
+                            
 
                             // Deserialize the JSON response into a list of objects
                             RootObject data = JsonConvert.DeserializeObject<RootObject>(responseData);
 
                             // Bind the data to a GridView or other controls
-                            datatbl.DataSource = data.Success.BookingData;
-                            datatbl.DataBind();
+                            repeater.DataSource = data.Success.booking_data;
+                            repeater.DataBind();
                         }
                         else
                         {
@@ -61,7 +61,7 @@ namespace BookingSubSystem.Webforms.admin_forms
                         Response.Write("An error occurred: " + ex.Message);
                     }
                 }
-            }
+            } 
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿.body {
-    background-color: #dec7c7;
+    background-color: #eed2d2;
     height: auto;
     width: auto;
     font-size: 16px;
@@ -9,10 +9,11 @@
     height: 100vh;
     width: 200px;
     position: fixed;
-    top: 105px;
-    left: 0;
-    background-color: white;
-    padding-top: 20px;
+    background-color: #fefcfce7;
+}
+
+.navbar {
+    background-color: #fefcfce7;
 }
 
 .icon-container {
@@ -33,31 +34,34 @@
     font-size: 15px;
     color: black;
     display: block;
-    font-weight: bold;
+    font-weight: 500;
 }
 
     .sidebar a:hover {
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: blue;
         text-decoration: none;
+        border-left: 5px solid blue;
     }
 
     .sidebar a.active {
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: blue;
         text-decoration: none;
+        border-left: 5px solid blue;
     }
 
     .active{
         background-color: aqua;
-        color:black;
+        color:blue;
     }
 
 
 .center-sidebar {
-    padding-top: 40%;
+    padding-top: 60%;
 }
 
 .table {
+    border-radius: 10px;
 }
 
