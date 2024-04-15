@@ -205,6 +205,79 @@ namespace BookingSubSystem.Webforms.admin_forms
             }
         }
 
+        protected async void btnNewService_Click(object sender, EventArgs e)
+        {
+            // Get the values from the modal form fields
+            string category = TextBox2.Text;
+            string description = TextBox3.Text;
+            double price;
+
+            if (!double.TryParse(TextBox4.Text, out price))
+            {
+                // Display an error message to the user if price is not a valid number
+                Response.Write("Price must be a valid number.");
+                return;
+            }
+
+            // Call the AddService method to add the new service
+            await AddService(category, description, price);
+
+            // Close the modal popup after saving the new service
+            ScriptManager.RegisterStartupScript(this, GetType(), "CloseAddModalScript", "$('#addsrvc').modal('hide');", true);
+        }
+
+        protected async Task AddService(string category, string description, double price)
+        {
+            // Serialize the data into key-value pairs
+            var formData = new Dictionary<string, string>
+                {
+                    { "category", category },
+                    { "description", description },
+                    { "price", price.ToString() }
+                };
+
+            // Encode the form data
+            var encodedFormData = new FormUrlEncodedContent(formData);
+
+            // Construct the URL for the POST request to add a new service
+            string apiUrl = "https://csms-rest-api.onrender.com/service/add";
+
+            string apiKey = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b";
+
+            // Create an instance of HttpClient
+            using (HttpClient client = new HttpClient())
+            {
+                // Add any required headers (e.g., API key and Content-Type)
+                client.DefaultRequestHeaders.Add("x-api-key", apiKey);
+
+                try
+                {
+                    // Set the Content-Type header to application/x-www-form-urlencoded
+                    encodedFormData.Headers.ContentType = new MediaTypeHeaderValue("application/x-www-form-urlencoded");
+
+                    // Send the POST request with the serialized form data
+                    HttpResponseMessage response = await client.PostAsync(apiUrl, encodedFormData);
+
+                    // Check if the request was successful
+                    if (response.IsSuccessStatusCode)
+                    {
+                        // Display success message or perform any other actions as needed
+                        Response.Write("Service added successfully.");
+                    }
+                    else
+                    {
+                        // Handle error response
+                        Response.Write("Failed to add service. HTTP Status Code: " + response.StatusCode);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle exceptions
+                    Response.Write("An error occurred: " + ex.Message);
+                }
+            }
+        }
+
     }
 
     public static class HttpClientExtensions

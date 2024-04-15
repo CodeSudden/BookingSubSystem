@@ -2,7 +2,6 @@
 <%@ Register Src="Navbar.ascx" TagName="Navbar" TagPrefix="uc" %>
 <%@ Register Src="sidebar.ascx" TagName="Sidebar" TagPrefix="uc" %>
 
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -10,20 +9,21 @@
     <title>Admin-Bookings</title>
     <link href="../../Stylesheet/Admin_style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body class="body">
     <form id="form1" runat="server">
 
         <uc:Navbar runat="server" />
         
-
     <div class="d-flex">
 
     <uc:Sidebar runat="server" />
 
         <div class="flex-grow-1">
     
-            <div class="container col-lg-10 mr-5">
+            <div class="container-fluid">
 
             <div class="row justify-content-end m-5">
                 <div class="col-auto">
