@@ -262,7 +262,7 @@ namespace BookingSubSystem.Webforms.admin_forms
                     if (response.IsSuccessStatusCode)
                     {
                         // Display success message or perform any other actions as needed
-                        Response.Write("Service added successfully.");
+                        //Response.Write("Service added successfully.");
                     }
                     else
                     {
