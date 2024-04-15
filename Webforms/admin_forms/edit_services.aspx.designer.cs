@@ -78,31 +78,31 @@ namespace BookingSubSystem.Webforms.admin_forms
         protected global::System.Web.UI.WebControls.Button btnSaveChanges;
 
         /// <summary>
-        /// TextBox2 control.
+        /// SrvcCtgy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox SrvcCtgy;
 
         /// <summary>
-        /// TextBox3 control.
+        /// SrvcDsc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox SrvcDsc;
 
         /// <summary>
-        /// TextBox4 control.
+        /// SrvcPrc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox SrvcPrc;
 
         /// <summary>
         /// btnSaveNewService control.

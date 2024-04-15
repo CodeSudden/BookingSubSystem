@@ -35,7 +35,7 @@
 
                 <button type="button" class="btn btn-primary float-right mr-3 mb-2" onclick="showModalAdd()">Add Services</button>
 
-            <table id="datatbl" class="table table-striped table-bordered bg-light">
+            <table id="datatbl" class="table table-striped table-bordered bg-light ">
                 <thead>
                     <tr>
                         <th>ServiceID</th>
@@ -114,20 +114,20 @@
                         <div class="modal-body">
                             <div class="form-group">
                                 <label for="category">Category:</label>
-                                <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" ></asp:TextBox>
+                                <asp:TextBox ID="SrvcCtgy" runat="server" CssClass="form-control" ></asp:TextBox>
                             </div>
                             <div class="form-group">
                                 <label for="description">Description:</label>
-                                <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control" Rows="4" TextMode="MultiLine" ></asp:TextBox>
+                                <asp:TextBox ID="SrvcDsc" runat="server" CssClass="form-control" Rows="4" TextMode="MultiLine" ></asp:TextBox>
                             </div>
                             <div class="form-group">
                                 <label for="price">Price:</label>
-                                <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control" ></asp:TextBox>
+                                <asp:TextBox ID="SrvcPrc" runat="server" CssClass="form-control" ></asp:TextBox>
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <asp:Button ID="btnSaveNewService" runat="server" Text="Save" CssClass="btn btn-primary" OnClick="btnNewService_Click" />
+                            <asp:Button ID="btnSaveNewService" runat="server" Text="Add" CssClass="btn btn-primary" OnClick="btnNewService_Click" />
                         </div>
                     </div>
                 </div>
