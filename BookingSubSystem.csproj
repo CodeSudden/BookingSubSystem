@@ -85,6 +85,7 @@
     <Content Include="Images\homepage.jpg" />
     <Content Include="Javascript\Services_PopUp.js" />
     <Content Include="Stylesheet\Admin_style.css" />
+    <Content Include="Stylesheet\admn_lgn.css" />
     <Content Include="Stylesheet\ForgotPass_Style.css" />
     <Content Include="Stylesheet\Login_Style.css" />
     <Content Include="Stylesheet\Main.css" />
@@ -97,6 +98,7 @@
     <Content Include="Webforms\admin_forms\Refunds.aspx" />
     <Content Include="Webforms\admin_forms\Navbar.ascx" />
     <Content Include="Webforms\admin_forms\Sidebar.ascx" />
+    <Content Include="Webforms\Admin_login.aspx" />
     <Content Include="Webforms\Forgot_Password.aspx" />
     <Content Include="Webforms\Homepage.aspx" />
     <Content Include="Webforms\Login.aspx" />
@@ -154,6 +156,13 @@
     </Compile>
     <Compile Include="Webforms\admin_forms\Sidebar.ascx.designer.cs">
       <DependentUpon>Sidebar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webforms\Admin_login.aspx.cs">
+      <DependentUpon>Admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webforms\Admin_login.aspx.designer.cs">
+      <DependentUpon>Admin_login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Webforms\Forgot_Password.aspx.cs">
       <DependentUpon>Forgot_Password.aspx</DependentUpon>
