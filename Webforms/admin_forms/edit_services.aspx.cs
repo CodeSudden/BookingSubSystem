@@ -208,11 +208,11 @@ namespace BookingSubSystem.Webforms.admin_forms
         protected async void btnNewService_Click(object sender, EventArgs e)
         {
             // Get the values from the modal form fields
-            string category = TextBox2.Text;
-            string description = TextBox3.Text;
+            string category = SrvcCtgy.Text;
+            string description = SrvcDsc.Text;
             double price;
 
-            if (!double.TryParse(TextBox4.Text, out price))
+            if (!double.TryParse(SrvcPrc.Text, out price))
             {
                 // Display an error message to the user if price is not a valid number
                 Response.Write("Price must be a valid number.");
