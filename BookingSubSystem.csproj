@@ -127,7 +127,6 @@
     <Compile Include="Webforms\admin_forms\Cancellation.aspx.designer.cs">
       <DependentUpon>Cancellation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Webforms\admin_forms\Class1.cs" />
     <Compile Include="Webforms\admin_forms\Edit_services.aspx.cs">
       <DependentUpon>Edit_services.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

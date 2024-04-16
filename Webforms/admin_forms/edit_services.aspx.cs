@@ -278,6 +278,66 @@ namespace BookingSubSystem.Webforms.admin_forms
             }
         }
 
+        protected async void searchButton_Click(object sender, EventArgs e)
+        {
+            // Get the search query from the search input field
+            string searchQuery = searchInput.Text.Trim();
+
+            if (!int.TryParse(searchQuery, out int serviceId))
+            {
+                // Display an error message if the search query is not a valid integer
+                // You can handle this according to your application's requirements
+                ScriptManager.RegisterStartupScript(this, GetType(), "InvalidSearchQuery", "alert('Please enter a valid Service ID.');", true);
+                return;
+            }
+
+            // Call your search services method with the service ID
+            await SearchServices(serviceId);
+        }
+
+
+        protected async Task SearchServices(int serviceId)
+        {
+            // Get the search query from the search input field
+
+            // Call your API with the search query to fetch matching services
+            string apiUrl = $"https://csms-rest-api.onrender.com/service/{serviceId}";
+
+            string apiKey = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b";
+
+            using (HttpClient client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Add("x-api-key", apiKey);
+
+                try
+                {
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseData = await response.Content.ReadAsStringAsync();
+                        // Deserialize the response data and update the repeater control with the search result                        var serviceResponse = JsonConvert.DeserializeObject<ServiceResponse>(responseData);
+                        var serviceResponse = JsonConvert.DeserializeObject<ServiceResponse>(responseData);
+                        var service = serviceResponse.service_data;
+                        // Bind the single service to the repeater control
+                        repeater.DataSource = new List<Service> { service };
+                        repeater.DataBind();
+                    }
+                    else
+                    {
+                        // Handle error response
+                        ScriptManager.RegisterStartupScript(this, GetType(), "FetchServiceError", $"alert('No Id match the records');", true);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle exceptions
+                    Response.Write("An error occurred: " + ex.Message);
+                }
+            }
+        }
+
+
     }
 
     public static class HttpClientExtensions

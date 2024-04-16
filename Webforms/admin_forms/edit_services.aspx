@@ -28,7 +28,8 @@
             <div class="row justify-content-end m-5">
                 <div class="col-auto">
                     <div class="form-inline">
-                        <input class="form-control mr-sm-2 ml-auto" type="search" placeholder="Search" aria-label="Search"/>
+                        <asp:TextBox ID="searchInput" runat="server" CssClass="form-control mr-sm-2 ml-auto" placeholder="Search service By ID"></asp:TextBox>
+                        <asp:Button ID="searchButton" runat="server" Text="Search" CssClass="btn btn-primary" OnClick="searchButton_Click" />
                     </div>
                 </div>
             </div>

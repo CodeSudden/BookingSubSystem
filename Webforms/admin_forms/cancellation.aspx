@@ -21,7 +21,7 @@
 
         <div class="flex-grow-1">
     
-            <div class="container col-lg-10 mr-5">
+            <div class="container-fluid">
 
             <div class="row justify-content-end m-5">
                 <div class="col-auto">
@@ -34,20 +34,24 @@
             <table class="table m-auto bg-white">
               <thead>
                 <tr>
-                  <th scope="col">SERVICE ID</th>
-                  <th scope="col">NAME</th>
-                  <th scope="col">ADDRESS</th>
-                  <th scope="col">TITLE</th>
-                  <th scope="col">TITLE</th>
-                  <th scope="col">TITLE</th>
+                  <th scope="col">Booking ID</th>
+                  <th scope="col">Customer Name</th>
+                  <th scope="col">Customer Phone</th>
+                  <th scope="col">Booking Date</th>
+                  <th scope="col">Service Category</th>
+                  <th scope="col">Total Price</th>
+                  <th scope="col">Status</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
                   <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>09123456789</td>
+                  <td>04-16-2024</td>
+                  <td>Cleaning</td>
+                  <td>1500</td>
+                  <td>Cancelled</td>
                 </tr>
               </tbody>
             </table>

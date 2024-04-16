@@ -44,11 +44,18 @@ namespace BookingSubSystem.models
         public List<BookingData> booking_data { get; set; }
     }
 
+    public class ServiceResponse
+    {
+        public Service service_data { get; set; }
+    }
+
 
     public class RootObject
     {
         public Success Success { get; set; }
         public List<Service> services_data { get; set; }
+        public Service service_data { get; set; }
+
     }
 
 }

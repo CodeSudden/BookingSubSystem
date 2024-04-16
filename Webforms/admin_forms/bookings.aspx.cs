@@ -63,5 +63,66 @@ namespace BookingSubSystem.Webforms.admin_forms
                 }
             } 
         }
+
+        protected async void searchButton_Click(object sender, EventArgs e)
+        {
+            // Get the search query from the search input field
+            string searchQuery = searchInput.Text.Trim();
+
+            if (!int.TryParse(searchQuery, out int bookingId))
+            {
+                // Display an error message if the search query is not a valid integer
+                // You can handle this according to your application's requirements
+                ScriptManager.RegisterStartupScript(this, GetType(), "InvalidSearchQuery", "alert('Please enter a valid Booking ID.');", true);
+                return;
+            }
+
+            // Call your search services method with the service ID
+            await SearchBooking(bookingId);
+        }
+
+
+        protected async Task SearchBooking(int bookingId)
+        {
+            // Get the search query from the search input field
+
+            // Call your API with the search query to fetch matching services
+            string apiUrl = $"https://csms-rest-api.onrender.com/booking/{bookingId}";
+
+            string apiKey = "8BYkEfBA6O6donzWlSihBXox7C0sKR6b";
+
+            using (HttpClient client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Add("x-api-key", apiKey);
+
+                try
+                {
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string responseData = await response.Content.ReadAsStringAsync();
+                        // Deserialize the response data and update the repeater control with the search result                        var serviceResponse = JsonConvert.DeserializeObject<ServiceResponse>(responseData);
+                        var rootObject = JsonConvert.DeserializeObject<RootObject>(responseData);
+
+                        // Bind the search results to the Repeater
+                        repeater.DataSource = rootObject.Success.booking_data;
+                        repeater.DataBind();
+
+                    }
+                    else
+                    {
+                        // Handle error response
+                        ScriptManager.RegisterStartupScript(this, GetType(), "FetchServiceError", $"alert('No Id match the records');", true);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle exceptions
+                    Response.Write("An error occurred: " + ex.Message);
+                }
+            }
+        }
+
     }
 }
